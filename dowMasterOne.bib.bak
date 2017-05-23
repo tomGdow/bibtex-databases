@@ -1354,7 +1354,7 @@
   url     = {http://www.tug.org/TUGboat/tb30-1/tb94mori.pdf},
 }
 
-@Article{Hegna:2013:latex,
+@Article{hegna:2013:latex,
   author = {K. Hegna and D. Langmyhr},
   title  = {Local guide to Bib\LaTeX},
   year   = {2013},
@@ -1363,18 +1363,13 @@
   url    = {https://heim.ifi.uio.no/~dag/latex-links/biblatex-guide.pdf},
 }
 
-@Misc{Daly:1999:makebst,
+@Misc{daly:1999:makebst,
   author = {P. W. Daly},
   title  = {Customizing Bibliographic Style Files (This paper describes program makebst)},
   year   = {1999},
-  note   = {Internet (accessed 23-May-2017},
+  note   = {Internet (accessed 23-May-2017)},
   file   = {:makebst_daly.pdf:PDF},
   url    = {http://www.ctex.org/documents/packages/bibref/makebst.pdf},
-}
-
-@Book{,
-  owner     = {tomgdow},
-  timestamp = {2017.05.23},
 }
 
 @Book{kopka:1999:latex,
@@ -1417,9 +1412,15 @@
   volume  = {3},
   pages   = {299--314},
   file    = {:naure_algol60.pdf:PDF},
-  url     = {https://web.eecs.umich.edu/~bchandra/courses/papers/Naure_Algol60.pdf},
+  url     = {https://web.eecs.umich.edu/~bchandra/courses/papers/Naure_Algol60.pdf}
 }
 
-@Comment{jabref-meta: databaseType:bibtex;}
+@Unpublished{dijkstra:1998:ncheers,
+  author = {Edsger W. Dijkstra},
+  title  = {$N$ cheers for determinants ($N>>0$)},
+  note   = {circulated privately},
+  year   = {1998},
+  url    = {http://www.cs.utexas.edu/users/EWD/ewd12xx/EWD1271.PDF},
+}
 
-@Comment{jabref-meta: fileDirectory:/home/tomgdow/lyx_tgd/biblio_databases_tomgdow/pdfLinuxCollection;}
+
