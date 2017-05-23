@@ -1354,7 +1354,7 @@
   url     = {http://www.tug.org/TUGboat/tb30-1/tb94mori.pdf},
 }
 
-@Article{hegna:2013:latex,
+@Misc{hegna:2013:latex,
   author = {K. Hegna and D. Langmyhr},
   title  = {Local guide to Bib\LaTeX},
   year   = {2013},
@@ -1365,7 +1365,7 @@
 
 @Misc{daly:1999:makebst,
   author = {P. W. Daly},
-  title  = {Customizing Bibliographic Style Files (This paper describes program makebst)},
+  title  = {Customizing Bibliographic Style Files (This paper describes the program makebst)},
   year   = {1999},
   note   = {Internet (accessed 23-May-2017)},
   file   = {:makebst_daly.pdf:PDF},
@@ -1420,7 +1420,26 @@
   title  = {$N$ cheers for determinants ($N>>0$)},
   note   = {circulated privately},
   year   = {1998},
+  file   = {:EWD1271.PDF:PDF},
   url    = {http://www.cs.utexas.edu/users/EWD/ewd12xx/EWD1271.PDF},
 }
 
+@Article{thompson:1914:calculus,
+  author    = {S. P. Thompson},
+  title     = {Calculus Made Easy: Being a Very-Simplest Introduction to Those Beautiful Methods of Reckoning which Are Generally Called by the Terrifying Names of the Differential Calculus and the Integral Calculus},
+  year      = {1914},
+  publisher = {MacMillan Company, New York},
+  url       = {http://djm.cc/library/Calculus_Made_Easy_Thompson.pdf},
+}
 
+@Article{moore:1965:thelaw,
+  author  = {Gordon E. Moore},
+  title   = {Cramming more components onto integrated circuits},
+  journal = {Electronics},
+  year    = {1965},
+  volume  = {38},
+  pages   = {114--117},
+  url     = {http://www.intel.com/research/silicon/moorespaper.pdf},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
