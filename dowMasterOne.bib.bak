@@ -1314,7 +1314,7 @@
 	Url                      = {https://www.wolfram.com/mathematica/}
 }
 
-@Book{zimmerman:2007:dublin,
+@Book{zimmerman:2007:dubcin,
 	Title                    = {Dublin Cinemas},
 	Author                   = {Marc Zimmermann},
 	Publisher                = {Nonsuch Publishing},
@@ -1359,7 +1359,6 @@
   title  = {Local guide to Bib\LaTeX},
   year   = {2013},
   note   = {Internet (University of Oslo Bioinformatics)[accessed 16-May-2017]},
-  file   = {oslo:biblatex_guide_univ_oslo.pdf:PDF},
   url    = {https://heim.ifi.uio.no/~dag/latex-links/biblatex-guide.pdf},
 }
 
