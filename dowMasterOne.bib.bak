@@ -1439,7 +1439,40 @@
   year    = {1965},
   volume  = {38},
   pages   = {114--117},
-  url     = {http://www.intel.com/research/silicon/moorespaper.pdf},
+  file    = {:moore_of_the_law.pdf:PDF},
+  url     = {https://www.cs.utexas.edu/~fussell/courses/cs352h/papers/moore.pdf},
+}
+
+@Book{abelson:1996:sicp,
+  title     = {Structure and Interpretation of Computer Programs},
+  publisher = {The MIT Press},
+  year      = {1996},
+  author    = {Harold Abelson and Gerald Jay Sussman},
+  edition   = {2nd},
+  isbn      = {0262011530},
+}
+
+@Article{Laaksonen:2017:cph,
+  author    = {A. Laaksonen},
+  title     = {Competitive Programmer’s Handbook},
+  year      = {2017},
+  publisher = {e-book},
+  url       = {https://cses.fi/book.pdf},
+}
+
+@Misc{hendrix:2017?:smalltalkoo,
+  author = {Bryce Hendrix},
+  title  = {Object Oriented Programming with {S}malltalk},
+  year   = {2017?},
+  note   = {Internet (lecture notes) [accessed 16-May-2017]},
+  url    = {http://esug.org/data/Lectures/Smalltalk-Lectures.pdf},
+}
+
+@Book{gokel:2017?:gnusmalltalk,
+  title     = {Computer Programming using GNU {S}malltalk},
+  publisher = {ebook},
+  year      = {2017?},
+  author    = {C. G{\"o}kel},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
