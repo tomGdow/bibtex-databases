@@ -626,7 +626,7 @@
 @Book{kernighan:1988:eps,
 	Title                    = {The Elements of Programming Style},
 	Author                   = {Kernighan, B. W. and Plauger, P. J.},
-	Editor                   = {2nd},
+	Edition                  = {2nd},
 	Publisher                = {McGraw-Hill},
 	Year                     = {1988},
 	ISBN                     = {0070342075}
@@ -1424,7 +1424,7 @@
   url    = {http://www.cs.utexas.edu/users/EWD/ewd12xx/EWD1271.PDF},
 }
 
-@Article{thompson:1914:calculus,
+@Book{thompson:1914:calculus,
   author    = {S. P. Thompson},
   title     = {Calculus Made Easy: Being a Very-Simplest Introduction to Those Beautiful Methods of Reckoning which Are Generally Called by the Terrifying Names of the Differential Calculus and the Integral Calculus},
   year      = {1914},
@@ -1452,7 +1452,7 @@
   isbn      = {0262011530},
 }
 
-@Article{Laaksonen:2017:cph,
+@Book{laaksonen:2017:cph,
   author    = {A. Laaksonen},
   title     = {Competitive Programmer’s Handbook},
   year      = {2017},
@@ -1464,6 +1464,7 @@
   author = {Bryce Hendrix},
   title  = {Object Oriented Programming with {S}malltalk},
   year   = {2017?},
+  publisher = {ebook},
   note   = {Internet (lecture notes) [accessed 16-May-2017]},
   url    = {http://esug.org/data/Lectures/Smalltalk-Lectures.pdf},
 }
@@ -1473,6 +1474,145 @@
   publisher = {ebook},
   year      = {2017?},
   author    = {C. G{\"o}kel},
+  file      = {:/home/tomgdow/refs-and-biblios/databases/pdfLinuxCollection/computer_programming_using_gnu_smalltalk.pdf:PDF},
+  url       = {http://stephane.ducasse.free.fr/FreeBooks/Gnu/ProgrammingUsingGnuSmalltalk.pdf},
+}
+
+@Book{garfinkel:1994:ughunix,
+  title     = {The UNIX Hater's Handbook: The Best of UNIX-Haters On-line Mailing Reveals Why UNIX Must Die!},
+  publisher = {IDG Books Worldwide, Inc.},
+  year      = {1994},
+  author    = {Simson L. Garfinkel},
+  isbn      = {1568842031},
+}
+
+@Misc{thomas:2016:briefhistory,
+  author = {Martyn Thomas},
+  title  = {A Very Brief History of Computing, 1948-2015},
+  year   = {2016},
+  note   = {Internet (Gresham College, lecture) [accessed 24-May-2017]},
+  url    = {https://www.gresham.ac.uk/lectures-and-events/a-very-brief-history-of-computing-1948-2015},
+}
+
+@Book{knuth:1986:texbook,
+  title     = {The {\TeX}book. {(Computers and Typesetting:A)}},
+  publisher = {Addison-Wesley Professional},
+  year      = {1986},
+  author    = {Donald E. Knuth},
+  isbn      = {0201134470},
+  url       = {http://www.ctex.org/documents/shredder/src/texbook.pdf},
+}
+
+@Book{Knuth:1997:acp1,
+  title     = {The Art of Computer Programming, Volume 1: Fundamental Algorithms},
+  publisher = {Addison Wesley Longman Publishing Co., Inc.},
+  year      = {1997},
+  author    = {Knuth, Donald E.},
+  address   = {Redwood City, CA, USA},
+  edition   = {3rd},
+  isbn      = {0-201-89683-4},
+}
+
+@Book{Knuth:1997:acp2,
+  title     = {The Art of Computer Programming, Volume 2: Seminumerical Algorithms},
+  publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+  year      = {1997},
+  author    = {Knuth, Donald E.},
+  address   = {Boston, MA, USA},
+  edition   = {3rd},
+  isbn      = {0-201-89684-2},
+}
+
+@Misc{moolenaar:2000:vimstory,
+  author = {Bram Moolenaar},
+  title  = {The continuing story of Vim},
+  year   = {2000},
+  note   = {Internet (presentation, Linux2000) [accessed 24-May-2017]},
+  url    = {http://moolenaar.net/vimstory.pdf},
+}
+
+@Article{huffman:1952:mrcode,
+  author  = {Huffman, David A.},
+  title   = {A Method for the Construction of Minimum-Redundancy Codes},
+  journal = {Proceedings of the Institute of Radio Engineers},
+  year    = {1952},
+  volume  = {40},
+  pages   = {1098-1101},
+  file    = {:/home/tomgdow/refs-and-biblios/databases/pdfLinuxCollection/huffman_1952_minimum-redundancy-codes.pdf:PDF},
+  url     = {http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf},
+}
+
+@InProceedings{vanleeuwen:1976:huffmantrees,
+  author    = {van Leeuwen, Jan},
+  title     = {On the Construction of Huffman Trees.},
+  booktitle = {ICALP},
+  year      = {1976},
+  pages     = {382--410},
+  file      = {:/home/tomgdow/refs-and-biblios/databases/pdfLinuxCollection/van_leeuwen_huffman.pdf:PDF},
+  timestamp = {2002-01-03T00:00:00.000+0100},
+  url       = {http://dblp.uni-trier.de/db/conf/icalp/icalp76.html#Leeuwen76},
+}
+
+@Article{shannon:1938:sarsc,
+  author  = {C. E. Shannon},
+  title   = {A symbolic analysis of relay and switching circuits},
+  journal = {Transactions of the American Institute of Electrical Engineers},
+  year    = {1938},
+  volume  = {57},
+  pages   = {713--723},
+  issn    = {0096-3860},
+  file    = {:/home/tomgdow/refs-and-biblios/databases/pdfLinuxCollection/shannon-claude-symbolic-anal.pdf:PDF},
+}
+
+@Article{knuth:1976:camastermind,
+  author  = {Knuth, D. E.},
+  title   = {The Computer as {M}astermind},
+  journal = {Journal of Recreational Mathematics},
+  year    = {1976},
+  volume  = {9},
+  pages   = {1--6},
+  file    = {:/home/tomgdow/refs-and-biblios/databases/pdfLinuxCollection/knuth_mastermind.pdf:PDF},
+  url     = {http://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf},
+}
+
+@Misc{adams:2014:mitscheme,
+  author = {Stephen Adams and Chris Hanson and others},
+  title  = {MIT/GNU Scheme User’s Manual (Edition 1.94 for MIT/GNU Scheme 9.4)},
+  year   = {2014},
+  note   = {Internet (accessed 24-May-2017)},
+  file   = {:/home/tomgdow/refs-and-biblios/databases/pdfLinuxCollection/mit_scheme_user_man.pdf:PDF},
+  url    = {http://www.gnu.org/software/mit-scheme/documentation/mit-scheme-user.pdf},
+}
+
+@Article{schneider:2006:onshannon,
+  author  = {Thomas D. Schneider},
+  title   = {Claude Shannon: Biologist},
+  journal = {IEEE Engineering In Medicine and Biology Magazine},
+  year    = {2006},
+  volume  = {25},
+  pages   = {30--33},
+  file    = {:/home/tomgdow/refs-and-biblios/databases/pdfLinuxCollection/shannon_claude_biologist_schneider.pdf:PDF},
+  url     = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1538977/},
+}
+
+@Article{shannon:1948:amtc,
+  author  = {C. E. Shannon},
+  title   = {A mathematical theory of communication},
+  journal = {The Bell System Technical Journal},
+  year    = {1948},
+  volume  = {27},
+  pages   = {379--423 \& 623--656},
+  file    = {:/home/tomgdow/refs-and-biblios/databases/pdfLinuxCollection/math_theory_commun_shannon.pdf:PDF},
+  url     = {http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf},
+}
+
+@Article{Shannon:1949:cipnoise,
+  author  = {C. E. Shannon},
+  title   = {Communication in the presence of noise},
+  journal = {Proceedings of the IRE},
+  year    = {1949},
+  volume  = {37},
+  pages   = {10--21},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
