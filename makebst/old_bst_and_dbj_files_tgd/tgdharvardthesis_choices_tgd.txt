@@ -1,0 +1,283 @@
+
+
+
+# Style Of Citations
+Author-year with some non-standard interface
+
+# AUTHOR--YEAR SUPPORT SYSTEM (if author-year citations)
+(*) Natbib for use with natbib v5.3 or later
+
+(No Annotations, No Presentations. Chose defaults)
+
+ORDERING OF REFERENCES (if author-year citations)
+(*) Alphabetical by all authors
+
+#ORDER ON VON PART (if not citation order)
+x
+
+#IGNORE FIRST NAMES (if author-year citations)
+(default) respect first names
+
+# Author names
+(r) Surname + initials (Smith, J. F.)
+
+# EDITOR NAMES IN COLLECTIONS (if author names reversed)
+(*) Editor names NOT reversed as edited by J. J. Smith
+
+#POSITION OF JUNIOR (if author names reversed)
+(*) Junior comes last as Smith, John, Jr.
+
+# JUNIOR PART IN THE CITATION (if author-year citations)
+(*) No `junior' part in the citations but in the ref listing
+
+#PUNCTUATION BETWEEN AUTHOR NAMES:
+(*) Author names separated by commas 
+
+#ADJACENT REFERENCES WITH REPEATED NAMES:
+(*) Author/editor names always present
+
+#NUMBER OF AUTHORS IN BIBLIOGRAPHY:
+(*) All authors included in listing
+
+# AUTHORS IN CITATIONS:
+(*) One author et al for three or more authors
+
+# TYPEFACE FOR AUTHORS IN LIST OF REFERENCES:
+normal font
+
+# FONT OF CITATION LABELS IN TEXT (if author-year citations)
+(*) Cited authors plain as result of \cite command
+
+# FONT OF EXTRA LABEL (The extra letter on the year)
+i
+
+# LABEL WHEN AUTHORS MISSING (if author-year citations)
+Year included when KEY replaces missing author
+
+# MISSING DATE (if author-year citations)
+(*) Missing date set to ???? in label and text
+
+# DATE POSITION:
+(b) Date after authors
+
+# DATE FORMAT (if author-year citations)
+(p) Year in parentheses as (1993)
+
+#INCLUDE MONTHS
+(*) Date is year only without the month
+
+# DATE PUNCTUATION (if date not at end)
+(*) Date with standard block punctuation (comma or period)
+(# choose the above, default, but COULD choose the following?)
+(x) No punct. after date  (did NOT choose this option) 
+
+# BLANK AFTER DATE
+(*) Space after date and punctuation
+
+#DATE FONT
+(*) Date in normal font
+
+# TRUNCATE YEAR (if author-year citations)
+(*) Year text full as 1990--1993 or `in press'
+
+# TITLE OF ARTICLE
+(*) Title plain with no special font
+
+# CAPITALIZATION OF ARTICLE TITLE:
+(t) Title style (just as in bib entry)
+(did NOT choose (*) Sentence style (capitalize first word and those in braces))
+
+# ARTICLE TITLE PRESENT
+(*) Article title present in journals and proceedings
+
+# JOURNAL NAMES
+(*) Periods in journal names are retained, as `Phys. Rev.'
+
+# JOURNAL NAME FONT
+ italics
+ 
+# THESIS TITLE
+ (*) Thesis titles like books 
+ 
+# TECH REPORT TITLE
+ (*) Tech. report title like articles 
+
+# TECH REPORT NUMBER
+ (*) Tech. report and number plain as `Tech. Rep. 123'
+
+# JOURNAL VOLUME:
+(b) Volume bold as {\bf vol}(num)
+
+# JOURNAL VOL AND NUMBER:
+(x) Journal vol, without number as 34
+
+# VOLUME PUNCTUATION:
+(c) Volume with comma as vol(num), ppp
+
+# YEAR IN JOURNAL SPECIFICATION:
+(*) Journal year like others as given by date position
+
+# PAGE NUMBERS
+(*) Start and stop page numbers given
+
+# LARGE PAGE NUMBERS:
+(s) Thin space inserted over 9999 as 11 234
+
+WORD `PAGE' IN ARTICLES:
+(*) Article pages numbers only as 234-256
+
+POSITION OF PAGES:
+(*) Pages given mid text as is normal
+(did NOT choose (e) Pages at end but before any notes)
+
+# WORD `VOLUME' IN ARTICLES:
+(*) Article volume as number only as 21
+
+# NUMBER AND SERIES FOR COLLECTIONS:
+(*) Allows number without series and suppresses word "number"
+
+# POSITION OF NUMBER AND SERIES:
+(*) After chapter and pages as in standard BibTeX
+
+# VOLUME AND SERIES FOR BOOKS/COLLECTIONS:
+(*) Vol. 23 of Series as in standard BibTeX
+
+# POSITION OF VOLUME AND SERIES FOR INCOLLECTIONS:
+ (*) Series and volume after the editors
+ 
+# JOURNAL NAME PUNCTUATION:
+(*) Comma after journal name
+
+# BOOK TITLE 
+(*) Book title italic (\em)
+
+# PAGES IN BOOKS
+(*) Pages in book plain as pp. 50-55
+
+# TOTAL PAGES OF A BOOK:
+(*) Total book pages not printed
+
+# PUBLISHER ADDRESS:
+(*) Publisher, address as Harcourt, New York
+
+# 
+
+PUBLISHER IN PARENTHESES:
+(*) Publisher as normal block without parentheses
+
+# PUBLISHER POSITION:
+(e) Publisher after edition 
+
+# ISBN NUMBER:
+(x) No ISBN 
+
+# ISSN NUMBER:
+(x) No ISSN 
+
+# DOI NUMBER:
+(x) No DOI
+
+# `EDITOR' AFTER NAMES (EDITED BOOKS WITHOUT AUTHORS):
+(b) `Name (Editor),' as above, editor upper case
+
+# EDITOR IN COLLECTIONS:
+(*) Same as for edited book (names before booktitle)
+
+# PUNCTUATION BETWEEN SECTIONS (BLOCKS):
+(*) \newblock after blocks (periods or new lines with openbib option)
+
+# PUNCTUATION AFTER AUTHORS:
+(*) Author block normal with regular block punctuation
+
+# PUNCTUATION AFTER `IN':
+(i) Italic `in' and space
+
+# `IN' WITH JOURNAL NAMES (if using 'in' with collections)
+(*) No `in' before journal name 
+
+# FINAL PUNCTUATION:
+(*) Period at very end of the listed reference
+
+# ABBREVIATE WORD `PAGES' (if not using external language file)
+(a) `Page' abbreviated as p. or pp.
+
+# OTHER ABBREVIATIONS:
+(a) Abbreviations of such words
+
+# ABBREVIATION FOR `EDITION' (if abbreviating words)
+(*) `Edition' abbreviated as `edn' 
+
+# MONTHS WITH DOTS:
+(*) Months with dots as Jan.
+
+# EDITION NUMBERS:
+(*) Editions as in database saving much processing memory
+
+# STORED JOURNAL NAMES:
+(a) Abbreviated journal names 
+
+# AMPERSAND:
+(a) Use ampersand in place of `and' 
+
+# COMMA BEFORE `AND':
+(n) No comma before `and' as `Tom, Dick and Harry'
+
+# NO `AND' IN REFERENCE LIST:
+(*) With `and' before last author in reference list
+
+# COMMA BEFORE `ET AL':
+(*) Comma before `et al' in reference list
+
+# FONT OF `ET AL':
+(i) Italic et al 
+
+# ADDITIONAL REVTeX DATA FIELDS:
+(*) No additional fields for REVTeX
+
+E-PRINT DATA FIELD: (without REVTeX fields)
+(e) Include eprint and archive fields for electronic publications
+
+# URL ADDRESS: (without REVTeX fields)
+(l) URL on new line after rest of reference
+
+# REFERENCE COMPONENT TAGS:
+(*) No reference component tags in the \bibitem entries
+
+# EMPHASIS: (affects all so-called italics)
+(*) Use emphasis ie, \em, allows font switching
+
+COMPATIBILITY WITH PLAIN TEX:
+(*) Use LaTeX commands which may not work with Plain TeX
+
+Finished!!
+Batch job written to file `tgdharvard.dbj'
+Shall I now run this batch job? (NO)
+y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
