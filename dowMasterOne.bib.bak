@@ -1337,7 +1337,7 @@
   author = {D. R. Wilkins},
   title  = {Getting Started with LaTeX},
   year   = {1995},
-  note   = {Internet (Trinity College Dublin Maths)[accessed 23-May-2016]},
+  note   = {Internet (Trinity College Dublin Maths)[ accessed 23-May-2016 ]},
   file   = {:wilkins_tcd_GSWLaTeX.pdf:PDF},
   url    = {http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/},
 }
@@ -1358,7 +1358,7 @@
   author = {K. Hegna and D. Langmyhr},
   title  = {Local guide to Bib\LaTeX},
   year   = {2013},
-  note   = {Internet (University of Oslo Bioinformatics)[accessed 16-May-2017]},
+  note   = {Internet (University of Oslo Bioinformatics)[ accessed 16-May-2017] },
   file   = {oslo:biblatex_guide_univ_oslo.pdf:PDF},
   url    = {https://heim.ifi.uio.no/~dag/latex-links/biblatex-guide.pdf},
 }
@@ -1465,7 +1465,7 @@
   title  = {Object Oriented Programming with {S}malltalk},
   year   = {2017?},
   publisher = {ebook},
-  note   = {Internet (lecture notes) [accessed 16-May-2017]},
+  note   = {Internet (lecture notes) [ accessed 16-May-2017] },
   url    = {http://esug.org/data/Lectures/Smalltalk-Lectures.pdf},
 }
 
@@ -1490,7 +1490,7 @@
   author = {Martyn Thomas},
   title  = {A Very Brief History of Computing, 1948-2015},
   year   = {2016},
-  note   = {Internet (Gresham College, lecture) [accessed 24-May-2017]},
+  note   = {Internet (Gresham College, lecture) [ accessed 24-May-2017 ]},
   url    = {https://www.gresham.ac.uk/lectures-and-events/a-very-brief-history-of-computing-1948-2015},
 }
 
@@ -1527,7 +1527,7 @@
   author = {Bram Moolenaar},
   title  = {The continuing story of Vim},
   year   = {2000},
-  note   = {Internet (presentation, Linux2000) [accessed 24-May-2017]},
+  note   = {Internet (presentation, Linux2000) [ accessed 24-May-2017 ]},
   url    = {http://moolenaar.net/vimstory.pdf},
 }
 
@@ -1613,6 +1613,18 @@
   year    = {1949},
   volume  = {37},
   pages   = {10--21},
+  file    = {:/home/tomgdow/refs-and-biblios/databases/pdfLinuxCollection/shannon_commun_noise.pdf:PDF},
+  url     = {http://www.ee.oulu.fi/~kk/dtsp/tutoriaalit/shannonpaper.pdf},
+}
+
+@Article{jamison:2000:learnlangmath,
+  author  = {Robert E. Jamison},
+  title   = {Learning the language of mathematics},
+  journal = {Language and Learning Across the Disciplines},
+  year    = {2000},
+  volume  = {4},
+  pages   = {45 -- 54},
+  url     = {https://wac.colostate.edu/llad/v4n1/jamison.pdf},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
