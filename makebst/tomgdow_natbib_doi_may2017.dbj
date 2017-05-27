@@ -1,12 +1,12 @@
-%% Driver file to produce haveago.bst from merlin.mbs
+%% Driver file to produce tomgdow_natbib_doi_may2017.bst from merlin.mbs
 %% Generated with makebst, version 4.1 (2003/09/08)
-%% Produced on 2016/03/19 at 14:42
+%% Produced on 2017/05/26 at 21:41
 %% 
 \input docstrip
 
 \preamble
 ----------------------------------------
-*** Try from bus ***
+*** tomgdow choices for author-year based on natbib ***
 
 \endpreamble
 
@@ -88,8 +88,8 @@ End of customized bst file
   vonx,%: Sort without von part
 %--------------------
 %IGNORE FIRST NAMES (if author-year citations)
-%   %: (def) Respect first names
-  xintls,%: Sort on surname only
+    %: (def) Respect first names
+% xintls,%: Sort on surname only
 %--------------------
 %AUTHOR NAMES:
 % ed-au,%: Full, surname last
@@ -105,8 +105,8 @@ End of customized bst file
 % nm-revv1,%: First name reversed, with full names
 %--------------------
 %EDITOR NAMES IN COLLECTIONS (if author names reversed)
-    %: (def) Editor names NOT reversed
-% ed-rev,%: Editor names reversed
+%   %: (def) Editor names NOT reversed
+  ed-rev,%: Editor names reversed
 %--------------------
 %POSITION OF JUNIOR (if author names reversed)
   jnrlst,%: Junior comes last
@@ -234,11 +234,11 @@ End of customized bst file
 % dtrev,%: Date as year month
 %--------------------
 %DATE PUNCTUATION (if date not at end)
-%   %: (def) Date with standard block punctuation
+    %: (def) Date with standard block punctuation
 % yrp-col,%: Colon after date
 % yrp-semi,%: Semi-colon after date
 % yrp-per,%: Period after date
-  yrp-x,%: No punct. after date
+% yrp-x,%: No punct. after date
 %--------------------
 %BLANK AFTER DATE:
     %: (def) Space after date
@@ -359,8 +359,8 @@ End of customized bst file
 % ser-vol,%: Series, vol. 23
 %--------------------
 %POSITION OF VOLUME AND SERIES FOR INCOLLECTIONS:
-    %: (def) Series and volume after the editors
-% ser-ed,%: Series and volume after booktitle
+%   %: (def) Series and volume after the editors
+  ser-ed,%: Series and volume after booktitle
 %--------------------
 %JOURNAL NAME PUNCTUATION:
     %: (def) Comma after journal
@@ -421,7 +421,7 @@ End of customized bst file
 % edparxc,bkedcap,%: `Name (Editor)'
 %--------------------
 %EDITOR IN COLLECTIONS:
-    %: (def) Same as for edited book
+%   %: (def) Same as for edited book
 % edby,%: In booktitle, edited by .. 
 % edby-par,%: In booktitle (edited by ..)
 % edby-parc,%: In booktitle, (edited by ..)
@@ -430,7 +430,7 @@ End of customized bst file
 % edby-par,edbyx,%: In booktitle (editor..)
 % edby-parc,edbyx,%: In booktitle, (editor..)
 % edby,edbyy,%: In booktitle, .., editor
-% edby-par,edbyy,%: In booktitle (.., editor)
+  edby-par,edbyy,%: In booktitle (.., editor)
 %--------------------
 %CAPITALIZE `EDITOR' OR `EDITED BY' (if editor capitalizable)
 %   %: (def) `(editor,..)' or `(edited by..)'
@@ -455,9 +455,9 @@ End of customized bst file
 % au-col,%: Author block with colon
 %--------------------
 %PUNCTUATION AFTER `IN':
-%   %: (def) Space after `in'
+    %: (def) Space after `in'
 % in-col,%: Colon after `in'
-  in-it,%: Italic `in'
+% in-it,%: Italic `in'
 % in-col,in-it,%: Italic `in' and colon
 % in-x,%: No word `in'
 %--------------------
@@ -533,8 +533,8 @@ End of customized bst file
 % revdata,eprint,url,url-blk,%: Include REVTeX data fields
 %--------------------
 %E-PRINT DATA FIELD: (without REVTeX fields)
-%   %: (def) Do not include eprint field
-  eprint,%: Include eprint and archive fields
+    %: (def) Do not include eprint field
+% eprint,%: Include eprint and archive fields
 %--------------------
 %URL ADDRESS: (without REVTeX fields)
 %   %: (def) No URL
@@ -557,5 +557,5 @@ End of customized bst file
 % plntx,%: Use only Plain TeX
 %--------------------
   }}
-\generate{\file{haveago.bst}{\MBopts}}
+\generate{\file{tomgdow_natbib_doi_may2017.bst}{\MBopts}}
 \endbatchfile

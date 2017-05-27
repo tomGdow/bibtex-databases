@@ -1606,7 +1606,7 @@
   url     = {http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf},
 }
 
-@Article{Shannon:1949:cipnoise,
+@Article{shannon:1949:cipnoise,
   author  = {C. E. Shannon},
   title   = {Communication in the presence of noise},
   journal = {Proceedings of the IRE},
@@ -1624,7 +1624,28 @@
   year    = {2000},
   volume  = {4},
   pages   = {45 -- 54},
+  file    = {:/home/tomgdow/refs-and-biblios/databases/pdfLinuxCollection/jamison_learn_lang_maths.pdf:PDF},
   url     = {https://wac.colostate.edu/llad/v4n1/jamison.pdf},
+}
+
+@InCollection{copeland:2008:modhistcomp,
+  author    = {Copeland, B. Jack},
+  title     = {The Modern History of Computing},
+  booktitle = {The Stanford Encyclopedia of Philosophy},
+  publisher = {Metaphysics Research Lab, Stanford University},
+  year      = {2008},
+  editor    = {Edward N. Zalta},
+  edition   = {{Fall 2008}},
+  url       = {https://plato.stanford.edu/archives/fall2008/entries/computing-history/},
+}
+
+@Misc{,
+  author = {David C. Zentgraf},
+  title  = {{What every programmer absolutely, positively needs to know about encodings and character sets to work with text}},
+  number = {0},
+  pages  = {0000010},
+  url    = {http://www.php.net/manual/en/function.utf8-encode.php},
+  volume = {0000001},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

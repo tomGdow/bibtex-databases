@@ -1,12 +1,12 @@
 %%
-%% This is file `tombus.bst',
+%% This is file `tomgdow_natbib_doi_may2017.bst',
 %% generated with the docstrip utility.
 %%
 %% The original source files were:
 %%
-%% merlin.mbs  (with options: `ay,nat,annote,seq-lab,vonx,nm-rev,jnrlst,keyxyr,dt-beg,yr-par,note-yr,vol-bf,volp-com,pgsep-c,num-xser,isbn,issn,doi,in-it,pp,ed,abr,mth-bare,xedn,jabr,amper,etal-it,url,url-nl,nfss,')
+%% merlin.mbs  (with options: `ay,nat,vonx,nm-rev,ed-rev,jnrlst,xlab-it,dt-beg,yr-par,note-yr,atit-u,vol-bf,vnum-x,volp-com,pgsep-s,num-xser,ser-ed,pre-edn,isbn,issn,doi,edpar,bkedcap,edby-par,edbyy,pp,ed,abr,xedn,jabr,amper,and-xcom,etal-it,url,url-nl,nfss,')
 %% ----------------------------------------
-%% *** harvard style by tgd ***
+%% *** tomgdow choices for author-year based on natbib ***
 %% 
 %% Copyright 1994-2011 Patrick W Daly
  % ===============================================================
@@ -53,7 +53,6 @@
 
 ENTRY
   { address
-    annote
     author
     booktitle
     chapter
@@ -128,11 +127,6 @@ FUNCTION {fin.entry}
 { add.period$
   write$
   newline$
-  annote missing$
-    { "\bibAnnoteFile{" cite$ * "}" * write$ newline$ }
-    { "\bibAnnote{" cite$ * "}{" * annote * "}" * write$ newline$
-    }
-  if$
 }
 
 FUNCTION {new.block}
@@ -174,26 +168,6 @@ FUNCTION {or}
 {   { pop$ #1 }
     'skip$
   if$
-}
-STRINGS {z}
-
-FUNCTION {remove.dots}
-{ 'z :=
-   ""
-   { z empty$ not }
-   { z #1 #2 substring$
-     duplicate$ "\." =
-       { z #3 global.max$ substring$ 'z :=  * }
-       { pop$
-         z #1 #1 substring$
-         z #2 global.max$ substring$ 'z :=
-         duplicate$ "." = 'pop$
-           { * }
-         if$
-       }
-     if$
-   }
-   while$
 }
 FUNCTION {new.block.checkb}
 { empty$
@@ -426,10 +400,6 @@ FUNCTION {format.names}
                 { 't := }
                 { pop$ }
               if$
-              numnames #2 >
-                { "," * }
-                'skip$
-              if$
               t "others" =
                 {
                   " " * bbl.etal emphasize *
@@ -452,52 +422,7 @@ FUNCTION {format.names}
 }
 FUNCTION {format.names.ed}
 {
-  'bibinfo :=
-  duplicate$ empty$ 'skip$ {
-  's :=
-  "" 't :=
-  #1 'nameptr :=
-  s num.names$ 'numnames :=
-  numnames 'namesleft :=
-    { namesleft #0 > }
-    { s nameptr
-      "{f.~}{vv~}{ll}{, jj}"
-      format.name$
-      bibinfo bibinfo.check
-      't :=
-      nameptr #1 >
-        {
-          namesleft #1 >
-            { ", " * t * }
-            {
-              s nameptr "{ll}" format.name$ duplicate$ "others" =
-                { 't := }
-                { pop$ }
-              if$
-              numnames #2 >
-                { "," * }
-                'skip$
-              if$
-              t "others" =
-                {
-
-                  " " * bbl.etal emphasize *
-                }
-                {
-                  "\&"
-                  space.word * t *
-                }
-              if$
-            }
-          if$
-        }
-        't
-      if$
-      nameptr #1 + 'nameptr :=
-      namesleft #1 - 'namesleft :=
-    }
-  while$
-  } if$
+  format.names
 }
 FUNCTION {format.key}
 { empty$
@@ -515,9 +440,10 @@ FUNCTION {get.bbl.editor}
 FUNCTION {format.editors}
 { editor "editor" format.names duplicate$ empty$ 'skip$
     {
-      "," *
       " " *
       get.bbl.editor
+      capitalize
+   "(" swap$ * ")" *
       *
     }
   if$
@@ -572,9 +498,6 @@ FUNCTION {format.note}
 
 FUNCTION {format.title}
 { title
-  duplicate$ empty$ 'skip$
-    { "t" change.case$ }
-  if$
   "title" bibinfo.check
 }
 FUNCTION {format.full.names}
@@ -601,10 +524,6 @@ FUNCTION {format.full.names}
                   " " * bbl.etal emphasize *
                 }
                 {
-                  numnames #2 >
-                    { "," * }
-                    'skip$
-                  if$
                   "\&"
                   space.word * t *
                 }
@@ -712,7 +631,7 @@ FUNCTION {n.separate}
     numnames #5 =
       { duplicate$ #1 #2 substring$ swap$
         #3 global.max$ substring$
-        "," swap$ * *
+        "\," swap$ * *
       }
       'skip$
     if$
@@ -748,7 +667,6 @@ FUNCTION {n.dashify}
 
 FUNCTION {word.in}
 { bbl.in capitalize
-  emphasize
   " " * }
 
 FUNCTION {format.date}
@@ -897,16 +815,6 @@ FUNCTION {format.vol.num.pages}
     }
   if$
   bolden
-  number "number" bibinfo.check duplicate$ empty$ 'skip$
-    {
-      swap$ duplicate$ empty$
-        { "there's a number but no volume in " cite$ * warning$ }
-        'skip$
-      if$
-      swap$
-      "(" swap$ * ")" *
-    }
-  if$ *
   eid empty$
     { format.journal.pages }
     { format.journal.eid }
@@ -941,13 +849,17 @@ FUNCTION {format.booktitle}
 FUNCTION {format.in.ed.booktitle}
 { format.booktitle duplicate$ empty$ 'skip$
     {
+      format.bvolume duplicate$ empty$ 'pop$
+        { ", " swap$ * * }
+      if$
       editor "editor" format.names.ed duplicate$ empty$ 'pop$
         {
-          "," *
-          " " *
           get.bbl.editor
-          ", " *
-          * swap$
+          swap$ "," *
+          " " * swap$ *
+          "(" swap$ * ")" *
+          swap$
+          " " * swap$
           * }
       if$
       word.in swap$ *
@@ -1070,6 +982,7 @@ FUNCTION {book}
     { format.bvolume output
       new.block
       format.number.series output
+      format.edition output
       new.sentence
       format.publisher.address output
     }
@@ -1078,7 +991,6 @@ FUNCTION {book}
       format.book.crossref output.nonnull
     }
   if$
-  format.edition output
   format.isbn output
   format.doi output
   new.block
@@ -1126,6 +1038,7 @@ FUNCTION {inbook}
       format.chapter.pages "chapter and pages" output.check
       new.block
       format.number.series output
+      format.edition output
       new.sentence
       format.publisher.address output
     }
@@ -1135,7 +1048,6 @@ FUNCTION {inbook}
       format.book.crossref output.nonnull
     }
   if$
-  format.edition output
   crossref missing$
     { format.isbn output }
     'skip$
@@ -1157,12 +1069,11 @@ FUNCTION {incollection}
   new.block
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
-      format.bvolume output
       format.number.series output
+      format.edition output
       format.chapter.pages output
       new.sentence
       format.publisher.address output
-      format.edition output
       format.isbn output
     }
     { format.incoll.inproc.crossref output.nonnull
@@ -1185,7 +1096,6 @@ FUNCTION {inproceedings}
   new.block
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
-      format.bvolume output
       format.number.series output
       format.pages output
       new.sentence
@@ -1434,8 +1344,7 @@ FUNCTION {calc.label}
   "("
   *
   year duplicate$ empty$
-  short.list key field.or.null = or
-     { pop$ "" }
+     { pop$ "????" }
      'skip$
   if$
   *
@@ -1457,11 +1366,6 @@ FUNCTION {sort.format.names}
           "   "  *
           namesleft #1 = t "others" = and
             { "zzzzz" 't := }
-            'skip$
-          if$
-          numnames #2 > nameptr #2 = and
-            { "zz" * year field.or.null * "   " *
-            }
             'skip$
           if$
           t sortify *
@@ -1594,6 +1498,7 @@ FUNCTION {reverse.pass}
   if$
   extra.label 'next.extra :=
   extra.label
+  emphasize
   duplicate$ empty$
     'skip$
     { "{\natexlab{" swap$ * "}}" * }
@@ -1639,18 +1544,6 @@ FUNCTION {begin.bib}
   write$ newline$
   "  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup \urlstyle{rm}\Url}\fi"
   write$ newline$
-  "\providecommand{\bibAnnoteFile}[1]{%"
-  write$ newline$
-  "  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\"
-  write$ newline$
-  "  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}"
-  write$ newline$
-  "\providecommand{\bibAnnote}[2]{%"
-  write$ newline$
-  "  \begin{quotation}\noindent\textsc{Key:} #1\\"
-  write$ newline$
-  "  \textsc{Annotation:}\ #2\end{quotation}}"
-  write$ newline$
 }
 EXECUTE {begin.bib}
 EXECUTE {init.state.consts}
@@ -1662,4 +1555,4 @@ FUNCTION {end.bib}
 EXECUTE {end.bib}
 %% End of customized bst file
 %%
-%% End of file `tombus.bst'.
+%% End of file `tomgdow_natbib_doi_may2017.bst'.
