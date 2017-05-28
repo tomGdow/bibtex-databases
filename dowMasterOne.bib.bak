@@ -848,12 +848,13 @@
 	Url                      = {http://www-formal.stanford.edu/jmc/recursive.pdf}
 }
 
-@Misc{mcgee:2003:dwarfadv,
-	Title                    = {My Adventures with Dwarfs. A Personal History in Mainframe Computers},
-	Author                   = {McGee, Russell C.},
-	Note                     = {Internet (accessed 16-Aug-2016)},
-	Year                     = {2003},
-	Url                      = {http://www.cbi.umn.edu/hostedpublications/pdf/McGee_Book-4.2.2.pdf}
+@Book{mcgee:2003:dwarfadv,
+  title     = {My Adventures with Dwarfs. A Personal History in Mainframe Computers},
+  publisher = {e-book},
+  year      = {2003},
+  author    = {McGee, Russell C.},
+  note      = {Internet (accessed 16-Aug-2016)},
+  url       = {http://www.cbi.umn.edu/hostedpublications/pdf/McGee_Book-4.2.2.pdf},
 }
 
 @Article{metcalfe:1976:p395,
@@ -1639,13 +1640,12 @@
   url       = {https://plato.stanford.edu/archives/fall2008/entries/computing-history/},
 }
 
-@Misc{,
+@Misc{zentgraf:2015:encoding,
   author = {David C. Zentgraf},
-  title  = {{What every programmer absolutely, positively needs to know about encodings and character sets to work with text}},
-  number = {0},
-  pages  = {0000010},
-  url    = {http://www.php.net/manual/en/function.utf8-encode.php},
-  volume = {0000001},
+  title  = {What every programmer absolutely, positively needs to know about encodings and character sets to work with text},
+  year   = {2015},
+  note   = {Internet (accessed 24-May-2017)},
+  url    = {http://kunststube.net/encoding/},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
